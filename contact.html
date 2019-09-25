@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title> The Burger Factory</title>
+</head>
+
+<body>
+  <section id="header" class="jumbotron p-0 pb-3 mb-1">
+
+    <h1 id="headerText" class="display-2 text-center text-white"> The Burger Factory</h1>
+
+  </section>
+
+  <!--Nav Bar-->
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link text-danger" href="./index.html"><i class="fas fa-home"></i> Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-danger" href="./menu.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active bg-danger" href="./contact.html">Contact Us</a>
+    </li>
+  </ul>
+  <hr class="mt-1 border border-danger">
+
+  <section class="container align-content-center ">
+    <div class="row">
+      <div class="col-md-3 "></div>
+      <div class=" col-md-6 align-items-center">
+
+        <form action = "./script.js" name = "myForm" onsubmit = "return(validate());">
+          <div class="form-group row">
+            <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName3" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPhone3" class="col-sm-2 col-form-label pb-0">Phone Number</label>
+            <div class="col-sm-10">
+              <input type="number" pattern=".{10}" class="form-control" id="validationCustom08" placeholder="Mobile"
+                oninput="check(this)">
+            </div>
+          </div>
+<!--*************Reason for Inquiry**************-->
+<div class="form-group">
+  <label for="exampleFormControlSelect1">Reason for Inquiry:</label>
+  <select class="form-control" id="dropDownSelect">
+    <option>Catering</option>
+    <option>Private Party</option>
+    <option>Feedback</option>
+    <option>Other</option>
+  </select>
+</div>
+<!--*************Reason for Inquiry**************-->
+
+
+
+<!--*************Additional Information**************-->
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Additional Information:</label>
+            <textarea class="form-control" id="formTextArea" rows="3"></textarea>
+          </div>
+<!--*************Additional Information**************-->
+
+          <fieldset class="form-group">
+            <span class="form-check-inline">
+              <div class="row">
+                <legend class="col-form-label col-sm pt-0">Have you been to the restaurant?</legend>
+                <div class="col-sm-6 form-check-inline">
+                  <div class="form-check">
+                    <input class="form-check-input yesLabel" type="radio" name="gridRadios" id="gridRadios1"
+                      value="option1">
+                    <label class="form-check-label " for="gridRadios1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input noLabel " type="radio" name="gridRadios" id="gridRadios2"
+                      value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </fieldset>
+          
+           
+
+           
+      <div class="form-group ">
+        <label for="formGroupExampleInput" class="mr-4">Best days to contact you:</label>
+        <!-- Monday -->
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="materialInline1" name="checkbox" value="check">
+          <label class="form-check-label" for="materialInline1">M</label>
+        </div>
+        
+        <!-- Tuesday -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="materialInline2" name="checkbox" value="check">
+            <label class="form-check-label" for="materialInline2">T</label>
+        </div>
+        
+        <!-- Wednesday -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="materialInline3" name="checkbox" value="check">
+            <label class="form-check-label" for="materialInline3">W</label>
+        </div>
+        <!-- Thursday -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="materialInline4" name="checkbox" value="check">
+            <label class="form-check-label" for="materialInline3">Th</label>
+        </div>
+        <!-- Friday -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="materialInline5" name="checkbox" value="check">
+            <label class="form-check-label" for="materialInline3">F</label>
+        </div>
+      </div>
+           
+ 
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" value="submit" class="btn btn-danger ">Send Request</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+
+
+  </section>
+  <hr class="mb-3 border border-danger">
+  <footer>
+    
+      <div class="col-md-12 footer text-center">
+        <h4>57 Hamline Ave S, St. Paul, MN 55105</h4>
+        <h4>651-283-4098</h4>
+
+      </div>
+    </footer>
+
+
+  <!-- Optional JavaScript -->
+  <script type="text/javascript" src="./script.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
