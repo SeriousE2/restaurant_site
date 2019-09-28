@@ -32,6 +32,34 @@ body {
     text-shadow: 2px 0 red, 2px 0 red, 2px 0 red, 2px 0 red;
 
 }
+.dottedHr {
+    border: 1px dashed red;
+    width: 98%;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.drinkHeader {
+    font-weight: bold;
+    text-shadow: 1px 0 red, 1px 0 red, 1px 0 red, 1px 0 red;
+    font-size: 25px;
+    color: rgb(12, 11, 11);
+}
+
+#underLine {
+    
+        border: 1px solid rgb(199, 199, 199);
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        
+}
+
+#menuBackGround {
+    background-color: rgb(255, 248, 248);
+}
 /* Media Queries */
 /* @media only screen and (max-width:1199px) {
 

@@ -1,4 +1,3 @@
-alert("Please enable Javascript on your browser for optimal use.")
 var addInfo = document.getElementById("formTextArea");
 var radioBtns = document.getElementsByName("gridRadios");
 var checkBoxValid = document.getElementsByName("checkbox");
